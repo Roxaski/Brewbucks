@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&family=Poppins:wght@100;200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-white: #ffffff;
+    --clr-offWhite: #f3f3ec;
+    --clr-green: #297529;
+    --clr-darkGreen: #035b03;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--clr-offWhite);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-green);
+    border-radius: 5px;
+    border: var(--clr-offWhite) solid 2px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+    background: rgb(51,147,51);
+    background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
+    cursor: default;
+}
+/*LOGO*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.logo img {
+    display: block;
+    width: 500px;
+    max-width: 95%;
+    height: auto;
+}
+.wrapper {
+    padding: 2rem;
+    max-width: 86rem;
+}
+/*OPENING TIMES*/
+.opening-times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.opening-times table {
+    text-transform: capitalize;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    letter-spacing: .5px;
+    text-align: left;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.opening-times thead tr td {
+    background-color: var(--clr-darkGreen);
+    font-weight: 400;
+    padding: .5rem 0 .5rem .45rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.opening-times tbody {
+    text-align: left;
+    background-color: var(--clr-darkGreen);
+}
+.opening-times tbody tr th,
+.opening-times tbody tr td {
+    padding: .5rem 0 .5rem .45rem;
+    font-weight: 400;
+}
+.reservations {
+    margin-left: 2rem;
+    line-height: 1.6;
+}
+.reservations h2 {
+    font-family: 'Josefin+Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    letter-spacing: 1px;
+    margin: 0 auto 15px;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+.reservations .contact ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 20px auto;
+}
+.reservations .contact ul li p {
+    margin-left: 1rem;
+}
+/*MENU*/
+.menu h2 {
+    font-family: 'Josefin+Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    letter-spacing: 1px;
+    margin: 20px auto 15px;
+    padding: .5rem 0 .5rem .45rem;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+.menu .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.menu .dishes {
+    padding: .5rem .5rem .5rem .45rem;
+    background-color: var(--clr-darkGreen);
+    border-radius: 10px;
+    box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.5);
+}
+.menu .dishes h3 {
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+.menu .dishes p {
+    font-size: clamp(1rem, 3vw, 1rem);
+    line-height: 1.6;
+    font-weight: 300;
+}
+/*ABOUT*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0 .5rem .45rem;
+}
+.about .content h2 {
+    font-family: 'Josefin+Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+.about h2,
+.about p {
+    padding-left: 1rem;
+}
+.about .content p {
+    margin: 13px auto;
+}
+.about img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.3);
+}
+/*ENTERTAINMENT*/
+.entertainment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0 .5rem .45rem;
+}
+.entertainment .content h2 {
+    font-family: 'Josefin+Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
+.entertainment .content p {
+    margin: 13px auto;
+    padding-right: 2rem;
+}
+.entertainment img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.3);
+}
+/*FOOTER*/
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 100%;
+    padding: 30px;
+    height: auto;
+    background: var(--clr-darkGreen);
+}
+footer .links h3 {
+    font-size: clamp(1rem, 3vw, 1.025rem);
+    font-weight: 400;
+    color: var(--clr-offWhite);
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+    letter-spacing: 1px;
+    opacity: 95%;
+}
+footer .links ul li {
+    font-size: clamp(.8rem, 3vw, .9rem);
+    font-weight: 300;
+    text-transform: capitalize;
+    list-style: none;
+    margin: 10px auto 0;
+    letter-spacing: .5px;
+}
+footer .links ul li i {
+    margin-right: .3rem;
+}
+footer .links ul li a {
+    color: var(--clr-offWhite);
+    text-decoration: none;
+}
+/*MEDIA QUERY'S*/
+@media screen and (max-width: 1260px) and (pointer: coarse) and (hover: none) {
+    .opening-times {
+        grid-template-columns: 1fr;
+    }
+    .reservations {
+        margin: 3rem 0 0 .5rem;
+    }
+    .menu .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    .menu .dishes {
+        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about .content h2 {
+        margin: 20px auto;
+    }
+    .about h2,
+    .about p {
+        padding-left: 0;
+    }
+    .entertainment {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .entertainment img {
+        box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.3);
+    }
+    .entertainment .content p {
+        padding-right: 0;
+    }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    .menu .content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: left;
+        gap: 1.25rem;
+    }
+}
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    .logo img {
+        width: 300px;
+    }
+}
