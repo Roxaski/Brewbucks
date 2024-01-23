@@ -241,6 +241,19 @@ footer .links ul li a {
     .about .content h2 {
         margin: 20px auto;
     }
+    .about h2,
+    .about p {
+        padding-left: 0;
+    }
+    .about img {
+        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.3);
+    }
+    .entertainment {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .entertainment img {
+        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.3);
+    }
     .entertainment .content p {
         padding-right: 0;
     }
