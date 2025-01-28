@@ -86,19 +86,13 @@ body {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
     text-decoration: underline;
     text-underline-offset: .5rem;
 }
 .reservations .contact ul li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     list-style: none;
     margin: 20px auto;
-}
-.reservations .contact ul li p {
-    margin-left: 1rem;
 }
 /*MENU*/
 .menu h2 {
@@ -118,10 +112,9 @@ body {
     gap: 1rem;
 }
 .menu .dishes {
-    padding: .5rem .5rem .5rem .45rem;
+    padding: .5rem;
     background-color: var(--clr-darkGreen);
-    border: solid 2px var(--clr-green);
-    box-shadow: 7px 8px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .menu .dishes h3 {
     text-transform: capitalize;
@@ -137,7 +130,7 @@ body {
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0 .5rem .45rem;
+    padding: 2rem 0 1rem 0;
 }
 .about .content h2 {
     font-family: 'Josefin+Sans', sans-serif;
@@ -156,16 +149,15 @@ body {
     margin: 13px auto;
 }
 .about img {
-    display: block;
     width: 100%;
     height: auto;
-    box-shadow: 7px 4px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
 /*ENTERTAINMENT*/
 .entertainment {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0 .5rem .45rem;
+    padding: 2rem 0 1rem 0;
 }
 .entertainment .content h2 {
     font-family: 'Josefin+Sans', sans-serif;
@@ -178,13 +170,13 @@ body {
 }
 .entertainment .content p {
     margin: 13px auto;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 .entertainment img {
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: -7px 4px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
 /*FOOTER*/
 footer {
@@ -192,7 +184,8 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-items: left;
     width: 100%;
-    padding: 15px 0 20px 3rem;
+    /* padding: 15px 0 20px 2.75rem; */
+    padding: 1rem 0 1.5rem 2rem;
     height: auto;
     background: var(--clr-darkGreen);
 }
@@ -221,7 +214,7 @@ footer .links ul li a {
     text-decoration: none;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1260px) and (pointer: coarse) and (hover: none) {
+@media screen and (max-width: 1145px) {
     .opening-times {
         grid-template-columns: 1fr;
     }
@@ -231,9 +224,6 @@ footer .links ul li a {
     .menu .content {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
-    }
-    .menu .dishes {
-        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.5);
     }
     .about {
         grid-template-columns: repeat(1, 1fr);
@@ -245,14 +235,8 @@ footer .links ul li a {
     .about p {
         padding-left: 0;
     }
-    .about img {
-        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.3);
-    }
     .entertainment {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .entertainment img {
-        box-shadow: 4px 5px 7px rgba(0, 0, 0, 0.3);
     }
     .entertainment .content p {
         padding-right: 0;
@@ -263,11 +247,13 @@ footer .links ul li a {
         gap: 1.5rem;
     }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 658px) {
     .menu .content {
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
     }
+}
+@media screen and (max-width: 430px) {
     footer {
         grid-template-columns: repeat(1, 1fr);
         justify-items: left;
