@@ -184,7 +184,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-items: left;
     width: 100%;
-    /* padding: 15px 0 20px 2.75rem; */
     padding: 1rem 0 1.5rem 2rem;
     height: auto;
     background: var(--clr-darkGreen);
@@ -214,7 +213,7 @@ footer .links ul li a {
     text-decoration: none;
 }
 /*MEDIA QUERY'S*/
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1250px) {
     .opening-times {
         grid-template-columns: 1fr;
     }
@@ -237,6 +236,7 @@ footer .links ul li a {
     }
     .entertainment {
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 0 1rem 0;
     }
     .entertainment .content p {
         padding-right: 0;
