@@ -16,4 +16,5 @@ Thankyou for the incredibly talented artist on Deviant Art [Ikue](https://www.de
 
 ## Copyright
 
-I do not claim to own any of the copyright material. Animal Crossing and all it's copyright material are the property of © Nintendo.
+I do not claim to own any of the copyright material. <br>
+Animal Crossing and all it's copyright material are the property of Nintendo.
