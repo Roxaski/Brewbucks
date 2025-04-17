@@ -70,8 +70,7 @@ body {
     text-align: left;
     background-color: var(--clr-darkGreen);
 }
-.opening-times tbody tr th,
-.opening-times tbody tr td {
+.opening-times tbody td {
     padding: .5rem 0 .5rem .45rem;
     font-weight: 400;
 }
