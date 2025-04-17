@@ -38,7 +38,6 @@ body {
     height: 100vh;
 }
 .logo img {
-    display: block;
     width: 500px;
     max-width: 95%;
     height: auto;
@@ -171,7 +170,6 @@ body {
     margin-right: 2rem;
 }
 .entertainment img {
-    display: block;
     width: 100%;
     height: auto;
     box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
