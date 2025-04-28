@@ -194,6 +194,7 @@ footer .links h3 {
     opacity: 95%;
 }
 footer .links ul li {
+    color: var(--clr-offWhite);
     font-size: clamp(.8rem, 3vw, .9rem);
     font-weight: 300;
     text-transform: capitalize;
@@ -203,10 +204,6 @@ footer .links ul li {
 }
 footer .links ul li i {
     margin-right: .3rem;
-}
-footer .links ul li a {
-    color: var(--clr-offWhite);
-    text-decoration: none;
 }
 /*MEDIA QUERY'S*/
 @media screen and (max-width: 1250px) {
