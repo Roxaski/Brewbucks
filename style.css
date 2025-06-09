@@ -91,6 +91,9 @@ body {
     list-style: none;
     margin: 20px auto;
 }
+.reservations .contact ul li i {
+    margin-right: 1rem;
+}
 /*MENU*/
 .menu h2 {
     font-family: 'Josefin+Sans', sans-serif;
@@ -247,6 +250,9 @@ footer .links ul li i {
     }
 }
 @media screen and (max-width: 430px) {
+    .reservations .contact ul li span:nth-child(2) {
+        display: block;
+    }
     footer {
         grid-template-columns: repeat(1, 1fr);
         justify-items: left;
