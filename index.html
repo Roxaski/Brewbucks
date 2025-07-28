@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Brewbucks | Artisan Coffee, Local Food & Monthly Live Music</title>
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Brewbucks"/>
+    <meta property="og:title" content="Brewbucks | Artisan Coffee, Local Food & Monthly Live Music">
+    <meta property="og:description" content="Visit Brewbucks, our cozy neighborhood café serving premium coffee, specialty teas, and fresh local food since 2005. Enjoy monthly live performances by Gulliver and K.K Slider">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Roxaski/Brewbucks/main/assets/open_graph/og_index.jpg">
+    <meta property="og:image:alt" content="Brewbucks">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://roxaski.github.io/Brewbucks/"/>
+    <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
     <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#546d6c">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Brewbucks serving the finest coffee since 2005">
+    <meta name="description" content="Visit Brewbucks, our cozy neighborhood café serving premium coffee, specialty teas, and fresh local food since 2005. Enjoy monthly live performances by Gulliver and K.K Slider">
     <meta name="theme-color" content="#297529">
-    <meta name="theme-color" content="#546d6c">
-    <title>Brewbucks | Serving the finest coffee since 2005</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer async src="https://kit.fontawesome.com/2d21b2aa33.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main>
         <div class="wrapper">
+            <!-- Hero Image -->
             <div class="logo">
-                <img fetchpriority="high" width="630" height="630" draggable="false" src="./assets/logo.webp" alt="brewbucks company logo">
+                <img fetchpriority="high" draggable="false" src="./assets/logo/logo.webp" alt="brewbucks company logo">
             </div>
-            <!--OPENING TIMES-->
+
+            <!-- Opening Times -->
             <div class="opening-times">
                 <table>
                     <thead>
@@ -64,9 +72,12 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <div class="reservations">
                     <h1>reservations</h1>
+
                     <p>Interested in checking out our cozy little Café ? Then i highly reccomend that you get in touch with us, we normally are completely packed out and we wouldn't you to miss out on coming to grab a delicious beverage or something to eat. You don't have to though you could always just drop by and try to get a table, we can also set your food and drink aside if you wanted to let us know ahead of time, either way feel free to use the contact information below.</p>
+
                     <div class="contact">
                         <ul>
                             <li>
@@ -87,51 +98,84 @@
                     </div>
                 </div>
             </div>
-            <!--MENU-->
+
+            <!-- Menu -->
             <div class="menu">
                 <h2>café menu</h2>
+                
                 <div class="content">
                     <div class="dishes">
                         <h3>coffee &#9749;</h3>
+
                         <p>Roasted with some of the finest quality beans, enjoy the sweet aroma of a fine cup of coffee, can be served with pigeon milk or if you prefer, black.</p>
                     </div>
+
                     <div class="dishes">
                         <h3>tea &#129483;</h3>
+
                         <p>Comes in a variety of flavours, ranging from Jasmine all the way to Cammomile and beyond. If standard cups of tea are more your thing, we have those too.</p>
                     </div>
+
                     <div class="dishes">
                         <h3>sablé cookie &#127850;</h3>
+
                         <p>Delicious cookies, known far and wide as one of the most delicious cookies you could ever eat, comes in different varities, such as chocolate chip and ginger.</p>
                     </div>
+
                     <div class="dishes">
                         <h3>panini's &#129386;</h3>
+
                         <p>Freshly made every morning, we have a huge offering of ingredients which are locally sourced from local farmers and islanders, all healthy all natural.</p>
                     </div>
                 </div>
             </div>
-            <!--ABOUT-->
+
+            <!--About -->
             <div class="about">
-                <img width="1280" height="720" src="./assets/cafe.webp" alt="brewster cafe art">
+                <img loading="lazy" draggable="false" 
+                src="./assets/main/cafe_large.webp" 
+                srcset="./assets/main/cafe_small.webp 480w,
+                        ./assets/main/cafe_medium.webp 800w,
+                        ./assets/main/cafe_large.webp 1280w"
+                sizes="(max-width: 1250px) calc(100vw - 4rem),
+                       calc(50vw - 2rem)"
+                alt="brewster cafe art">
+
                 <div class="content">
                     <h2>our cozy little café</h2>
+
                     <p>Welcome to Brewbucks our cozy little café, me and my wife decided to open this cozy little place, which we call our home away from home. We agreed to open it at the tail end of 2005. We thought since it's a wild world out there, we would open a lovely cozy place to serve our delicious food and drinks.</p>
+
                     <p>We have made some renovations throughout the years, our goal was always keep the cozy café vibe. We felt like we want anyone who came in to feel right at home when they would visit us here at Brewbucks.</p>
+
                     <p>We cater for everyone, offering drinks that cater to both the tea and coffee lovers, and serving a variety of food that is both vegeterian and vegan friendly.</p>
                 </div>
             </div>
-            <!--ENTERTAINMENT-->
+
+            <!-- Entertainment -->
             <div class="entertainment">
                 <div class="content">
                     <h2>K.K slider & gulliver</h2>
+
                     <p>We are incredibly proud to announce that we will be having the world renown artist K.K Slider performing at our cozy little café, along with the extremely talented Gulliver who will also have a regular slot.</p>
+
                     <p>Both of these incredible artists will be performing here at Brewbucks once a month. K.K Slider will be performing on the third thursday of every month, he will be performing a vast modicum of his most famous songs, you can expect to hear classics such as Welcome New Horizons and Love Song amongst many others.</p>
+
                     <p>Gulliver will be performing a stand up routine every other monday, we guarantee that these are two acts you don't want to miss out on.</p>
-                    <p>* Dates and times are subject to change</p>
                 </div>
-                <img width="1280" height="720" src="./assets/entertainment.webp" alt="kk slider and gulliver art">
+
+                <img loading="lazy" draggable="false" 
+                src="./assets/entertainment_large.webp"
+                srcset="./assets/main/entertainment_small.webp 480w,
+                        ./assets/main/entertainment_medium.webp 800w,
+                        ./assets/main/entertainment_large.webp 1280w"
+                sizes="(max-width: 1250px) calc(100vw - 4rem),
+                       calc(50vw - 2rem)"
+                alt="kk slider and gulliver art">
             </div>
         </div>
-        <!--FOOTER-->
+
+        <!-- Footer -->
         <footer>
             <div class="links">
                 <h3>quick links</h3>
