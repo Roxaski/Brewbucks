@@ -12,7 +12,7 @@ If anyone has any feedback i would greatly appreciate it, as i'm currently learn
 
 ## Image Credits
 
-Thankyou for the incredibly talented artist on Deviant Art [Ikue](https://www.deviantart.com/ikue) for allowing me to use his artwork!
+Thankyou for these incredibly talented artists on Deviant Art [Ikue](https://www.deviantart.com/ikue) and [Mymzi](https://www.deviantart.com/mymzi) for allowing me to use their artwork!
 
 ## Copyright
 
