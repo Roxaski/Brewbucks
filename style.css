@@ -1,3 +1,11 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +37,7 @@ body {
     background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
     cursor: default;
 }
-/*LOGO*/
+/* Hero Image */
 .logo {
     display: flex;
     align-items: center;
@@ -46,7 +54,7 @@ body {
     padding: 2rem;
     max-width: 90rem;
 }
-/*OPENING TIMES*/
+/* Opening Times */
 .opening-times {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -78,8 +86,6 @@ body {
     line-height: 1.6;
 }
 .reservations h1 {
-    font-family: 'Josefin+Sans', sans-serif;
-    font-weight: 500;
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
@@ -94,10 +100,8 @@ body {
 .reservations .contact ul li i {
     margin-right: 1rem;
 }
-/*MENU*/
+/* Menu */
 .menu h2 {
-    font-family: 'Josefin+Sans', sans-serif;
-    font-weight: 500;
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
@@ -126,15 +130,13 @@ body {
     line-height: 1.6;
     font-weight: 300;
 }
-/*ABOUT*/
+/* About */
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 0 1rem 0;
 }
 .about .content h2 {
-    font-family: 'Josefin+Sans', sans-serif;
-    font-weight: 500;
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
@@ -153,15 +155,13 @@ body {
     height: auto;
     box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
-/*ENTERTAINMENT*/
+/* Entertainment */
 .entertainment {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 0 1rem 0;
 }
 .entertainment .content h2 {
-    font-family: 'Josefin+Sans', sans-serif;
-    font-weight: 500;
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
@@ -177,7 +177,7 @@ body {
     height: auto;
     box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
-/*FOOTER*/
+/* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -208,7 +208,7 @@ footer .links ul li {
 footer .links ul li i {
     margin-right: .3rem;
 }
-/*MEDIA QUERY'S*/
+/* Media Query's */
 @media screen and (max-width: 1250px) {
     .opening-times {
         grid-template-columns: 1fr;
