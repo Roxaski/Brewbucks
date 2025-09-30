@@ -37,7 +37,6 @@ body {
     background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
     cursor: default;
 }
-/* Hero Image */
 .logo {
     display: flex;
     align-items: center;
@@ -54,7 +53,6 @@ body {
     padding: 2rem;
     max-width: 90rem;
 }
-/* Opening Times */
 .opening-times {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -100,7 +98,6 @@ body {
 .reservations .contact ul li i {
     margin-right: 1rem;
 }
-/* Menu */
 .menu h2 {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
@@ -130,7 +127,6 @@ body {
     line-height: 1.6;
     font-weight: 300;
 }
-/* About */
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -155,7 +151,6 @@ body {
     height: auto;
     box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
-/* Entertainment */
 .entertainment {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -177,7 +172,6 @@ body {
     height: auto;
     box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
-/* Footer */
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -208,7 +202,6 @@ footer .links ul li {
 footer .links ul li i {
     margin-right: .3rem;
 }
-/* Media Query's */
 @media screen and (max-width: 1250px) {
     .opening-times {
         grid-template-columns: 1fr;
