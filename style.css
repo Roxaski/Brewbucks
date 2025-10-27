@@ -38,15 +38,16 @@ body {
     cursor: default;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
 }
 .logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 500px;
     max-width: 95%;
+    margin: 0 auto;
     height: auto;
 }
 .wrapper {
@@ -203,6 +204,11 @@ footer .links ul li i {
     margin-right: .3rem;
 }
 @media screen and (max-width: 1250px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .opening-times {
         grid-template-columns: 1fr;
     }
