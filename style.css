@@ -128,50 +128,41 @@ body {
     line-height: 1.6;
     font-weight: 300;
 }
-.about {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0 1rem 0;
+    grid-template-areas: 
+    'about-img about-content'
+    'entertainment-content entertainment-img';
+    gap: 2rem;
+    margin: 3rem auto 0;
 }
-.about .content h2 {
+.grid-container .about.img {
+    grid-area: about-img;
+}
+.grid-container .about.content {
+    grid-area: about-content;
+}
+.grid-container .entertainment.img {
+    grid-area: entertainment-img;
+}
+.grid-container .entertainment.content {
+    grid-area: entertainment-content;
+}
+.grid-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
+}
+.grid-container h2 {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
     text-decoration: underline;
     text-underline-offset: .5rem;
 }
-.about h2,
-.about p {
-    padding-left: 1rem;
-}
-.about .content p {
+.grid-container p {
     margin: 13px auto;
-}
-.about img {
-    width: 100%;
-    height: auto;
-    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
-}
-.entertainment {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 0 1rem 0;
-}
-.entertainment .content h2 {
-    text-transform: capitalize;
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
-    letter-spacing: 1px;
-    text-decoration: underline;
-    text-underline-offset: .5rem;
-}
-.entertainment .content p {
-    margin: 13px auto;
-    margin-right: 2rem;
-}
-.entertainment img {
-    width: 100%;
-    height: auto;
-    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
 }
 footer {
     display: grid;
@@ -219,22 +210,19 @@ footer .links ul li i {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
-    .about {
-        grid-template-columns: repeat(1, 1fr);
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            'about-img about-img'
+            'about-content about-content'
+            'entertainment-img entertainment-img'
+            'entertainment-content entertainment-content';
+        gap: 2rem;
+        margin: 3rem auto 0;
     }
-    .about .content h2 {
+    .grid-container h2 {
         margin: 20px auto;
-    }
-    .about h2,
-    .about p {
-        padding-left: 0;
-    }
-    .entertainment {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0 0 1rem 0;
-    }
-    .entertainment .content p {
-        padding-right: 0;
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
