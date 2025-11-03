@@ -218,7 +218,6 @@ footer .links ul li i {
             'about-content about-content'
             'entertainment-img entertainment-img'
             'entertainment-content entertainment-content';
-        gap: 2rem;
         margin: 3rem auto 0;
     }
     .grid-container h2 {
