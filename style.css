@@ -65,7 +65,7 @@ body {
     text-align: left;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
-.opening-times thead tr td {
+.opening-times thead tr th {
     background-color: var(--clr-darkGreen);
     font-weight: 400;
     padding: .5rem 0 .5rem .45rem;
