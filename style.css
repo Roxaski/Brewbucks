@@ -214,10 +214,10 @@ footer .links ul li i {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-            'about-img about-img'
-            'about-content about-content'
-            'entertainment-img entertainment-img'
-            'entertainment-content entertainment-content';
+        'about-img about-img'
+        'about-content about-content'
+        'entertainment-img entertainment-img'
+        'entertainment-content entertainment-content';
         margin: 3rem auto 0;
     }
     .grid-container h2 {
