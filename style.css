@@ -245,6 +245,11 @@ footer .links ul li i {
         gap: 1.25rem;
     }
 }
+@media screen and (max-width: 385px) {
+    .opening-times tbody td {
+        padding: .75rem;
+    }
+}
 @media screen and (max-width: 950px) and (orientation: landscape) {
     .logo img {
         width: 300px;
