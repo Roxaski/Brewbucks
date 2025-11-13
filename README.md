@@ -1,6 +1,6 @@
 # Brewbucks
 
-![Brewbucks](https://github.com/user-attachments/assets/3d369142-0679-4e02-be61-3e8c9044e120)
+<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/4f7c651f-9693-4b14-96f8-5d90db8d7839" />
 
 ## Welcome to Brewbucks
 
