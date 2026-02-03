@@ -96,7 +96,12 @@ body {
     list-style: none;
     margin: 20px auto;
 }
-.reservations .contact ul li i {
+.reservations .contact ul li img {
+    display: inline-block;
+    position: relative;
+    top: .2rem;
+    width: 18px;
+    height: auto;
     margin-right: 1rem;
 }
 .menu h2 {
