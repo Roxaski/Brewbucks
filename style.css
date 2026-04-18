@@ -84,7 +84,7 @@ body {
     margin-left: 2rem;
     line-height: 1.6;
 }
-.reservations h1 {
+.reservations h2 {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     letter-spacing: 1px;
