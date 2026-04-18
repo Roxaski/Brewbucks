@@ -67,8 +67,8 @@ body {
 }
 .opening-times thead tr th {
     background-color: var(--clr-darkGreen);
-    font-weight: 400;
-    padding: .5rem 0 .5rem .45rem;
+    font-weight: 300;
+    padding: .5rem 0 .5rem .65rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -76,8 +76,12 @@ body {
     text-align: left;
     background-color: var(--clr-darkGreen);
 }
+.opening-times tbody tr th {
+    padding-left: .65rem;
+    font-weight: 400;
+}
 .opening-times tbody td {
-    padding: .5rem 0 .5rem .45rem;
+    padding: .5rem 0 .5rem .65rem;
     font-weight: 400;
 }
 .reservations {
@@ -127,6 +131,15 @@ body {
     text-transform: capitalize;
     letter-spacing: .5px;
     font-weight: 400;
+    margin-bottom: 1rem;
+}
+.menu .dishes:nth-child(1) span {
+    position: relative;
+    bottom: .1rem;
+}
+.menu .dishes:nth-child(2) span {
+    position: relative;
+    bottom: .13rem;
 }
 .menu .dishes p {
     font-size: clamp(1rem, 3vw, 1rem);
@@ -254,9 +267,14 @@ footer .links ul li .icon {
         gap: 1.25rem;
     }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 390px) {
+    .opening-times table {
+        width: 100%;
+    }
+    .opening-times tbody tr th,
     .opening-times tbody td {
-        padding: .75rem;
+        display: block;
+        padding: .45rem .35rem .45rem .65rem;
     }
 }
 @media screen and (max-width: 950px) and (orientation: landscape) {
