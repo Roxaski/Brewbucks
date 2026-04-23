@@ -2,8 +2,22 @@
   font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/poppins-v23-latin-regular.woff2') format('woff2');
+  src: url('./assets/fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/poppins-v24-latin-500.woff2') format('woff2');
 }
 
 * {
@@ -51,7 +65,7 @@ body {
     height: auto;
 }
 .wrapper {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 90rem;
 }
 .opening-times {
@@ -67,7 +81,7 @@ body {
 }
 .opening-times thead tr th {
     background-color: var(--clr-darkGreen);
-    font-weight: 300;
+    font-weight: 400;
     padding: .5rem 0 .5rem .65rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -88,13 +102,20 @@ body {
     margin-left: 2rem;
     line-height: 1.6;
 }
+.reservations h1 {
+    text-transform: capitalize;
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin: 10px auto;
+}
 .reservations h2 {
     text-transform: capitalize;
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    font-weight: 400;
     letter-spacing: 1px;
-    margin: 0 auto 20px;
-    text-decoration: underline;
-    text-underline-offset: .5rem;
+    margin: 0 auto 10px;
 }
 .reservations .contact ul li {
     list-style: none;
@@ -111,6 +132,7 @@ body {
 .menu h2 {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-weight: 400;
     letter-spacing: 1px;
     margin: 20px auto 15px;
     padding: .5rem 0 .5rem .45rem;
@@ -175,6 +197,7 @@ body {
 .grid-container h2 {
     text-transform: capitalize;
     font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-weight: 400;
     letter-spacing: 1px;
     text-decoration: underline;
     text-underline-offset: .5rem;
@@ -187,14 +210,14 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     justify-items: left;
     width: 100%;
-    padding: 1rem 0 1.5rem 2rem;
+    padding: 1rem;
     height: auto;
     background: var(--clr-darkGreen);
 }
 footer .links h3 {
     font-size: clamp(1rem, 3vw, 1.025rem);
-    font-weight: 400;
-    color: var(--clr-offWhite);
+    font-weight: 500;
+    color: var(--clr-white);
     text-transform: capitalize;
     margin-bottom: .5rem;
     letter-spacing: 1px;
@@ -247,7 +270,6 @@ footer .links ul li .icon {
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
         gap: 1.5rem;
     }
 }
@@ -263,7 +285,6 @@ footer .links ul li .icon {
     }
     footer {
         grid-template-columns: 1fr;
-        justify-items: left;
         gap: 1.25rem;
     }
 }
