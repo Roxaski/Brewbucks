@@ -208,8 +208,6 @@ body {
 footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: left;
-    width: 100%;
     padding: 1rem;
     height: auto;
     background: var(--clr-darkGreen);
