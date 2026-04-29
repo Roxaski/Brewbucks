@@ -47,7 +47,7 @@ body {
     height: 100vh;
     color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
-    background: rgb(51,147,51);
+    background-color: #339333;
     background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
     cursor: default;
 }
