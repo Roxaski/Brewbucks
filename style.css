@@ -33,12 +33,16 @@
 }
 body {
     width: 100%;
+    max-width: 90rem;
     height: 100vh;
     color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
     background-color: #339333;
     background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
     cursor: default;
+}
+main {
+    padding: 1rem;
 }
 .logo {
     width: 100%;
@@ -52,10 +56,6 @@ body {
     max-width: 95%;
     margin: 0 auto;
     height: auto;
-}
-.wrapper {
-    padding: 1rem;
-    max-width: 90rem;
 }
 .opening-times {
     display: grid;
