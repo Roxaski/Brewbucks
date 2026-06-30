@@ -251,9 +251,13 @@ footer .links ul li .icon {
         'entertainment-img entertainment-img'
         'entertainment-content entertainment-content';
         margin: 3rem auto 0;
+        gap: .25rem;
     }
     .grid-container h2 {
         margin: 20px auto;
+    }
+    .grid-container .about p:last-child {
+        margin-bottom: 1.25rem;
     }
     footer {
         grid-template-columns: repeat(2, 1fr);
