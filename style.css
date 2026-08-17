@@ -29,20 +29,28 @@
     --clr-white: #ffffff;
     --clr-offWhite: #f3f3ec;
     --clr-green: #297529;
+    --clr-midGreen: #339333;
     --clr-darkGreen: #035b03;
 }
 body {
     width: 100%;
     max-width: 90rem;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
-    background-color: #339333;
-    background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
+    background-color: var(--clr-midGreen);
     cursor: default;
 }
 main {
     padding: 1rem;
+    z-index: 1;
+}
+main::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
+    z-index: -1;
 }
 .logo {
     width: 100%;
@@ -54,7 +62,7 @@ main {
     justify-content: center;
     width: 500px;
     max-width: 95%;
-    margin: 0 auto;
+    margin: 2rem auto;
     height: auto;
 }
 .opening-times {
@@ -158,6 +166,10 @@ main {
     line-height: 1.6;
     font-weight: 300;
 }
+.menu .dishes .bells {
+    color: var(--clr-offWhite);
+    font-size: 1.025rem;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -183,7 +195,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-    box-shadow: -4px 3px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
 }
 .grid-container h2 {
     text-transform: capitalize;
@@ -202,6 +214,8 @@ footer {
     padding: 1rem;
     height: auto;
     background: var(--clr-darkGreen);
+    position: relative;
+    z-index: 1;
 }
 footer .links h3 {
     font-size: clamp(1rem, 3vw, 1.025rem);
