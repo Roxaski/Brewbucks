@@ -28,33 +28,27 @@
 :root {
     --clr-white: #ffffff;
     --clr-offWhite: #f3f3ec;
-    --clr-green: #297529;
-    --clr-midGreen: #339333;
-    --clr-darkGreen: #035b03;
+    --clr-lightGrey: #d4d4d4;
+    --clr-green: #056a05;
+    --clr-darkGreen: #025102;
 }
 body {
     width: 100%;
     max-width: 90rem;
     min-height: 100vh;
+    margin: 0 auto;
     color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
-    background-color: var(--clr-midGreen);
+    background-color: var(--clr-green);
     cursor: default;
 }
 main {
     padding: 1rem;
     z-index: 1;
 }
-main::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: radial-gradient(circle, rgb(57, 138, 57) 35%, rgba(5,106,5,1) 75%);
-    z-index: -1;
-}
 .logo {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 }
 .logo img {
     display: flex;
@@ -102,27 +96,27 @@ main::before {
 .reservations h1 {
     text-transform: capitalize;
     font-size: clamp(1.2rem, 3vw, 1.4rem);
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 5px;
-    margin: 10px auto;
+    margin: .62rem auto;
 }
 .reservations h2 {
     text-transform: capitalize;
     font-size: clamp(1rem, 3vw, 1.15rem);
     font-weight: 400;
     letter-spacing: 1px;
-    margin: 0 auto 10px;
+    margin: 0 auto .62rem;
 }
 .reservations .contact ul li {
     list-style: none;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 .reservations .contact ul li img {
     display: inline-block;
     position: relative;
     top: .2rem;
-    width: 18px;
+    width: 1.15rem;
     height: auto;
     margin-right: 1rem;
     aspect-ratio: 1 / 1;
@@ -132,7 +126,7 @@ main::before {
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     font-weight: 400;
     letter-spacing: 1px;
-    margin: 20px auto 15px;
+    margin: 1.25rem auto .93rem;
     padding: .5rem 0 .5rem .45rem;
     text-decoration: underline;
     text-underline-offset: .5rem;
@@ -143,15 +137,25 @@ main::before {
     gap: 1rem;
 }
 .menu .dishes {
-    padding: .5rem;
+    padding: 1em 1rem .75rem .5rem;
     background-color: var(--clr-darkGreen);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .menu .dishes h3 {
+    position: relative;
     text-transform: capitalize;
     letter-spacing: .5px;
     font-weight: 400;
     margin-bottom: 1rem;
+}
+.menu .dishes h3::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    width: 100%;
+    height: 1.25px;
+    background: var(--clr-lightGrey);
 }
 .menu .dishes:nth-child(1) span {
     position: relative;
@@ -169,6 +173,7 @@ main::before {
 .menu .dishes .bells {
     color: var(--clr-offWhite);
     font-size: 1.025rem;
+    margin-left: .15rem;
 }
 .grid-container {
     display: grid;
@@ -206,7 +211,7 @@ main::before {
     text-underline-offset: .5rem;
 }
 .grid-container p {
-    margin: 13px auto;
+    margin: .83rem auto;
 }
 footer {
     display: grid;
@@ -214,8 +219,6 @@ footer {
     padding: 1rem;
     height: auto;
     background: var(--clr-darkGreen);
-    position: relative;
-    z-index: 1;
 }
 footer .links h3 {
     font-size: clamp(1rem, 3vw, 1.025rem);
@@ -232,7 +235,7 @@ footer .links ul li {
     font-weight: 300;
     text-transform: capitalize;
     list-style: none;
-    margin: 10px auto 0;
+    margin: .62rem auto 0;
     letter-spacing: .5px;
 }
 footer .links ul li .icon {
@@ -248,6 +251,9 @@ footer .links ul li .icon {
         align-items: center;
         justify-content: center;
     }
+    .logo img {
+        margin: 1.5rem auto;
+    }
     .opening-times {
         grid-template-columns: 1fr;
     }
@@ -260,7 +266,6 @@ footer .links ul li .icon {
     }
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         'about-img about-img'
         'about-content about-content'
@@ -270,7 +275,7 @@ footer .links ul li .icon {
         gap: .25rem;
     }
     .grid-container h2 {
-        margin: 20px auto;
+        margin: 1.25rem auto;
     }
     .grid-container .about p:last-child {
         margin-bottom: 1.25rem;
