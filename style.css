@@ -157,11 +157,14 @@ main {
     height: 1.25px;
     background: var(--clr-lightGrey);
 }
-.menu .dishes:nth-child(1) span {
+.menu .dishes .icon {
+    margin-left: .2rem;
+}
+.menu .dishes:nth-child(1) .icon {
     position: relative;
     bottom: .1rem;
 }
-.menu .dishes:nth-child(2) span {
+.menu .dishes:nth-child(2) .icon {
     position: relative;
     bottom: .13rem;
 }
@@ -258,7 +261,7 @@ footer .links ul li .icon {
         grid-template-columns: 1fr;
     }
     .reservations {
-        margin: 3rem 0 0 .5rem;
+        margin: 2rem 0 0 .5rem;
     }
     .menu .content {
         grid-template-columns: repeat(2, 1fr);
