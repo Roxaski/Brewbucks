@@ -1,5 +1,5 @@
-![Brewbucks](https://github.com/user-attachments/assets/720f5e49-f996-48fb-b1ec-1c6a41b5e54d#gh-light-mode-only)
-![Brewbucks](https://github.com/user-attachments/assets/1ab4cc78-33c8-42c5-93ab-3ea89898a944#gh-dark-mode-only)
+![Brewbucks](https://github.com/user-attachments/assets/eba98b79-2b7e-4b5a-a68b-50a9e65cea71#gh-light-mode-only)
+![Brewbucks](https://github.com/user-attachments/assets/4bf921ca-770e-4241-b2dc-a722e4119a3e#gh-dark-mode-only)
 
 ## Welcome to Brewbucks
 
