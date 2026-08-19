@@ -1,4 +1,5 @@
-<img width="1920" height="1080" alt="github_read me" src="https://github.com/user-attachments/assets/4f7c651f-9693-4b14-96f8-5d90db8d7839" />
+![Brewbucks](https://github.com/user-attachments/assets/720f5e49-f996-48fb-b1ec-1c6a41b5e54d#gh-light-mode-only)
+![Brewbucks](https://github.com/user-attachments/assets/1ab4cc78-33c8-42c5-93ab-3ea89898a944#gh-dark-mode-only)
 
 ## Welcome to Brewbucks
 
